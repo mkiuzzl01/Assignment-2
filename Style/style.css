@@ -1,0 +1,100 @@
+/* import font here */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+/* This is universal Selector here */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+}
+/* Shared style here */
+.text-yellow{
+    color: #FF5400 !important; 
+}
+.btn-primary{
+    background-color: #FF5400;
+    color:white;
+    padding:16px;
+    border: none;
+    border-radius:8px;
+}
+.font-light-gray{
+    color: white;
+    font-size:1rem;
+    font-weight: 400;
+    line-height: 26px; 
+}
+/* Header section style here */
+header{
+    max-width:1170px;
+    margin:50px auto;
+}
+/* nav Related style here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.nav-title{
+    margin-left:15px;
+    font-size:2.25rem;
+    font-weight: 800; 
+}
+.nav-link > ul{
+ display: flex;
+ list-style:none;
+
+}
+.nav-link li a{
+ margin-left:44px;
+ color: #424247;
+font-size:1.12rem;
+font-weight: 400; 
+}
+/* This is Banner Style Here */
+.banner{
+    text-align: center;
+    margin-top:50px;
+    padding:106px 0;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+}
+.banner-title{
+    color: white;
+    font-size: 64px;
+    font-weight: 800; 
+}
+.banner-description{}
+.banner-input-field{
+    /* background-color:#ffff;
+    opacity:0.5; */
+    display: flex;
+    justify-content: space-around;
+    max-width:800px;
+    margin:48px auto;
+}
+.banner-input-field select , input{
+    padding: 16px;
+    border-radius:8px;
+    margin-left:24px;
+}
+
+/* Media Screen Control Here */
+/* Mobile device */
+@media screen and (Max-width:578px) {
+    nav,
+    .banner-input-field{
+        flex-direction: column;
+    }
+}
+
+/* Tablet device */
+@media screen and (Min-width:578px)  and (Max-width:960px){
+    
+}
