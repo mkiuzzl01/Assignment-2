@@ -255,8 +255,63 @@ font-weight: 800;
 }
 .Card-Description{}
 .Card-Price{
-    font-size: 20px;
+    font-size:1.50rem;
     font-weight: 800; 
+}
+.see-all-section{
+    text-align: center;
+    margin-top:62px;
+}
+/* Simple Perfect Place Style Here */
+.Simple-Perfect-place{
+    margin-top:100px;
+    justify-content: space-between;
+    display: flex;
+
+}
+.Simple-Perfect-place-Content{
+    margin-bottom:24px;
+}
+.place-Description{
+    color: #5A5A5D;
+}
+.place-list{
+padding:20px;
+color: #131318;
+font-size:1rem;
+font-weight: 700;
+line-height: 26px; 
+}
+.Simple-Perfect-Place-Images img{
+    width:auto;
+}
+/* This is Recent Visited Place style Here */
+.Recent-Visited{
+    margin-top:100px;
+}
+.Recent-Visited-images img{
+    width:100%;
+}
+.visited-img-row-1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    margin-bottom:20px;
+}
+.visited-img-row-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    margin-top:20px;
+}
+.visited-img-row-3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    margin-top:20px;
+}
+.Recent-Visited-Content{
+    margin-top:50px;
 }
 /* Media Screen Control Here */
 /* Mobile device */
@@ -264,7 +319,8 @@ font-weight: 800;
     nav,
     .banner-input-field form,
     .nav-link > ul,
-    .Our-Popular-trip{
+    .Our-Popular-trip,
+    .Simple-Perfect-place{
         flex-direction: column;
         align-items: center;
     
@@ -275,7 +331,10 @@ font-weight: 800;
     .img-row-1,
     .img-row-2,
     .img-row-3,
-    .card-row-1{
+    .card-row-1,
+    .visited-img-row-1,
+    .visited-img-row-2,
+    .visited-img-row-3{
         grid-template-columns:repeat(1,1fr);    
     }
    
@@ -284,7 +343,8 @@ font-weight: 800;
 /* Tablet device */
 @media screen and (Min-width:578px)  and (Max-width:960px){
     nav,
-    .Our-Popular-trip{
+    .Our-Popular-trip,
+    .Simple-Perfect-place{
         flex-direction: column;
         align-items: center;
     
@@ -294,7 +354,10 @@ font-weight: 800;
     }
     .img-row-1,
     .img-row-2,
-    .img-row-3{
+    .img-row-3,
+    .visited-img-row-1,
+    .visited-img-row-2,
+    .visited-img-row-3{
         grid-template-columns:repeat(1,1fr); 
     }
 }
