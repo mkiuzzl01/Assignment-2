@@ -19,6 +19,8 @@
     border: none;
     border-radius:8px;
     cursor: pointer;
+    font-weight: 800; 
+    font-size:1.50rem; 
 }
 .text-light-gray{
     color: white;
@@ -187,7 +189,75 @@ font-weight: 400;
 }
 .card-img{}
 .card-title{}
-.card-description{}
+.card-description{
+color: rgba(19, 19, 24, 0.70);
+}
+
+/* This is Deals-and-Discounts Style Here */
+.Deals-and-Discounts{
+    margin-top:100px;
+}
+.Discount-Content{
+    text-align: center;
+}
+.Discount-Description{
+    color: rgba(19, 19, 24, 0.70);
+}
+.Discount-Cards{
+    margin-top:48px;
+}
+.Discount-Row-1{
+    display: flex;
+    justify-content: end;
+    margin-top:24px;
+    padding:56px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    background-image: url(../Images/Group\ 39.png);
+}
+.Discount-Row-2{
+    display: flex;
+    justify-content:start;
+    background-repeat: no-repeat;
+    margin-top:24px;
+    padding:56px;
+    background-size: cover;
+    background-position:center;
+    border-radius: 16px;
+    background-image:url(../Images/Group\ 40.png);
+}
+.Discount-Row-3{
+    display: flex;
+    justify-content: end;
+    background-repeat: no-repeat;
+    margin-top:24px;
+    padding:56px;
+    background-size: cover;
+    background-position:center;
+    border-radius: 16px;
+    background-image:url(../Images/Group\ 39.png);
+}
+.Card{
+    width:580px;
+    height:390px;
+    padding:52px;
+    background-color: #FFFFFFCC;
+    border-radius: 16px;
+    border: 2px white solid;
+    backdrop-filter: blur(5px)
+}
+.Card-Title{
+color: #131318;
+font-size:1.25rem;
+font-weight: 800; 
+}
+.Card-Description{}
+.Card-Price{
+    font-size: 20px;
+    font-weight: 800; 
+}
 /* Media Screen Control Here */
 /* Mobile device */
 @media screen and (Max-width:578px) {
