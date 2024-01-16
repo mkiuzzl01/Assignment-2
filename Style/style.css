@@ -33,9 +33,14 @@
     font-size:2.80rem;
     font-weight: 800; 
     }
+.font-size{
+    font-size:3rem;
+    color: blueviolet;
+}
 /* Header section style here */
 header,
-main{
+main,
+.footer-section{
     max-width:1170px;
     margin:50px auto;
     padding:5px;
@@ -90,12 +95,10 @@ font-weight: 400;
     max-width:800px;
     margin:48px auto;
 }
-.banner-input-field select , input{
+.banner-input-field select,input{
     width:174px;
-    height:52px;
     padding: 16px;
-    margin:10px;
-    border-radius:8px;
+    border-radius:8px;  
   
 }
 /* Our Popular Trip Section Style */
@@ -241,7 +244,6 @@ color: rgba(19, 19, 24, 0.70);
 }
 .Card{
     width:580px;
-    height:390px;
     padding:52px;
     background-color: #FFFFFFCC;
     border-radius: 16px;
@@ -313,6 +315,39 @@ line-height: 26px;
 .Recent-Visited-Content{
     margin-top:50px;
 }
+/* This is News Letter Style */
+.News-Letter{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Input-Field{
+    padding:40px;
+    border-radius: 16px;
+    border: 1px #FF5400 solid
+}
+.News-Letter-Images img{
+    padding:24px
+}
+.Input-Field{
+    max-width:400px;
+    /* background-color: #424247; */
+}
+/* This is Footer section Here */
+footer{
+    text-align: center;
+    background-color: #1313180D;
+    padding:110px 0px;
+}
+.footer-Content{
+    display: flex;
+    justify-content: center;
+}
+.icon-Section i{
+    padding:23px;
+    font-size:2rem;
+}
 /* Media Screen Control Here */
 /* Mobile device */
 @media screen and (Max-width:578px) {
@@ -320,12 +355,17 @@ line-height: 26px;
     .banner-input-field form,
     .nav-link > ul,
     .Our-Popular-trip,
-    .Simple-Perfect-place{
+    .Simple-Perfect-place,
+    .News-Letter{
         flex-direction: column;
         align-items: center;
     
     }
-    .Destination-img{
+   
+    .Destination-img,
+    .News-Letter-Images img,
+    .Our-Popular-Trip-Image img,
+    .Simple-Perfect-Place-Images img{
         width:100%;
     }
     .img-row-1,
@@ -349,7 +389,14 @@ line-height: 26px;
         align-items: center;
     
     }
-    .Destination-img{
+    .News-Letter{
+        flex-direction: column-reverse;
+    }
+
+    .Destination-img,
+    .News-Letter-Images img,
+    .Our-Popular-Trip-Image img,
+    .Simple-Perfect-Place-Images img{
         width:100%;
     }
     .img-row-1,
