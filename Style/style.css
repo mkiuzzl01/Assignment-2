@@ -26,6 +26,11 @@
     font-weight: 400;
     line-height: 26px; 
 }
+.Section-Title{
+    color: #131318;
+    font-size:2.80rem;
+    font-weight: 800; 
+    }
 /* Header section style here */
 header,
 main{
@@ -71,7 +76,7 @@ font-weight: 400;
 }
 .banner-title{
     color: white;
-    font-size: 64px;
+    font-size:4rem;
     font-weight: 800; 
 }
 .banner-input-field form{
@@ -100,11 +105,7 @@ font-weight: 400;
 .Our-Popular-Trip-Content{
     padding:20px;
 }
-.Popular-Trip-Title{
-color: #131318;
-font-size:2.80rem;
-font-weight: 800; 
-}
+
 .Popular-trip-list{
     padding:15px;
 }
@@ -112,6 +113,41 @@ font-weight: 800;
     padding-top:20px;
     width:auto;
 }
+/* This is Chose Your Destination Style Here */
+.Chose-Destination{
+    margin-top:100px;
+}
+.Destination-Content{
+    text-align: center;
+}
+.Destination-Description{
+    color: rgba(19, 19, 24, 0.70); 
+}
+.Chose-Destination-images{
+    margin-top:48px;
+    display: grid;
+    gap:24px;
+}
+
+.img-row-1{
+    display: grid;
+    gap:24px;
+    grid-template-columns:repeat(2,1fr);
+    
+}
+.img-row-2{
+    display: grid;
+    gap:24px;
+    grid-template-columns:repeat(3,1fr);
+
+}
+.img-row-3{
+    display: grid;
+    gap:24px;
+    grid-template-columns:repeat(2,1fr);
+
+}
+
 /* Media Screen Control Here */
 /* Mobile device */
 @media screen and (Max-width:578px) {
@@ -123,6 +159,18 @@ font-weight: 800;
         align-items: center;
     
     }
+    .Destination-img{
+        width:100%;
+    }
+    .img-row-1{
+        grid-template-columns:repeat(1,1fr);    
+    }
+    .img-row-2{
+        grid-template-columns:repeat(1,1fr);    
+    }
+    .img-row-3{
+        grid-template-columns:repeat(1,1fr);    
+    }
 }
 
 /* Tablet device */
@@ -132,5 +180,17 @@ font-weight: 800;
         flex-direction: column;
         align-items: center;
     
+    }
+    .Destination-img{
+        width:100%;
+    }
+    .img-row-1{
+        grid-template-columns:repeat(1,1fr);    
+    }
+    .img-row-2{
+        grid-template-columns:repeat(1,1fr);    
+    }
+    .img-row-3{
+        grid-template-columns:repeat(1,1fr);    
     }
 }
